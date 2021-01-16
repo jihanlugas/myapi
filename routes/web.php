@@ -53,6 +53,9 @@ $router->group([ // http://localhost:8080/api
         $router->put('{id}', 'UserController@update');
         $router->delete('{id}', 'UserController@destroy');
     });
+
+
+    $router->post('login', 'AuthController@login');
 });
 
 
